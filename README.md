@@ -1,226 +1,129 @@
-# <div align="center">
+<div align="center">
+  <h1>🧠 MLP Classifier Evaluation using Tkinter GUI</h1>
+</div>
 
-# &nbsp; <h1>🧠 MLP Classifier Evaluation GUI</h1>
+<p align="center">
+  <em>An interactive application to evaluate Multi-Layer Perceptron models using different validation techniques and visualize confusion matrices.</em>
+</p>
 
-# &nbsp; <p>A Tkinter-based interactive tool to evaluate MLP classifiers using cross-validation on the Breast Cancer Wisconsin dataset.</p>
+---
 
-# </div>
+## 📌 Overview
 
-# 
+This project provides a graphical interface for evaluating **MLP (Multi-Layer Perceptron)** classifiers on the **Breast Cancer Wisconsin dataset**. It uses **Tkinter** for GUI design, **scikit-learn** for model training and evaluation, and **matplotlib** for plotting the confusion matrices.
 
-# ---
+Key capabilities include:
 
-# 
+- Multiple model evaluation strategies (train/test, k-fold, random splits)  
+- Real-time accuracy display via pop-ups  
+- Confusion matrix visualization in the interface  
+- Auto-cleanup of saved plot images
 
-# \## 📌 Overview
+---
 
-# 
+## 🧰 Requirements
 
-# This Python project is a GUI-based application that allows users to evaluate a \*\*Multi-Layer Perceptron (MLP) classifier\*\* on the \*\*Breast Cancer Wisconsin dataset\*\* using various validation methods. The project leverages \*\*Tkinter\*\* for GUI, \*\*scikit-learn\*\* for machine learning, and \*\*matplotlib\*\* for visualization.
+- Python 3.x  
+- Tkinter (usually pre-installed with Python)  
+- Pillow  
+- ucimlrepo  
+- scikit-learn  
+- matplotlib
 
-# 
+To install Python dependencies:
 
-# ---
+```bash
+pip install -r requirements.txt
+```
 
-# 
+---
 
-# \## 🧠 Features
+## 🔧 Installation & Setup
 
-# 
+1. **Clone the repository**:
 
-# \- Train and test on the full dataset
+```bash
+git clone https://github.com/batuhanisiklar/mlp-classifier-gui.git
+cd mlp-classifier-gui
+```
 
-# \- 5-Fold Cross Validation
+2. **(Optional) Create virtual environment**:
 
-# \- 10-Fold Cross Validation
+```bash
+python -m venv .venv
+.venv\Scripts\activate  # Windows
+source .venv/bin/activate # macOS/Linux
+```
 
-# \- 5 random 66/34 train-test splits
+3. **Install requirements**:
 
-# \- Displays accuracy score and confusion matrix
+```bash
+pip install -r requirements.txt
+```
 
-# \- GUI built with `Tkinter` and interactive image display using `PIL`
+---
 
-# 
+## ▶️ Usage
 
-# ---
+Run the main GUI application:
 
-# 
+```bash
+python main.py
+```
 
-# \## 📁 Requirements
+You can then:
 
-# 
+- Select any of the evaluation options:
+  - Train and Test (Same Data)
+  - 5-Fold Cross Validation
+  - 10-Fold Cross Validation
+  - Random Splits (66-34)
+- View confusion matrix directly in the app.
+- Close the app using the **Quit** button.
 
-# \- Python 3.x  
+---
 
-# \- Dependencies in `requirements.txt`:
+## 📁 Project Structure
 
-# 
+```
+mlp-classifier-gui/
+│
+├── main.py                   # Main application script
+├── requirements.txt          # Python dependencies
+└── README.md                 # Project documentation
+```
 
-# ```
+---
 
-# tk
+## ✨ Features
 
-# pillow
+- ✅ Easy-to-use GUI with Tkinter
+- ✅ Real-time accuracy feedback
+- ✅ Confusion matrix image preview
+- ✅ Multiple evaluation strategies
+- ✅ Uses real-world Breast Cancer dataset from UCI
 
-# ucimlrepo
+---
 
-# scikit-learn
+## 🙋‍♂️ Contributing
 
-# matplotlib
+Contributions are welcome! Fork the repository and feel free to submit pull requests or issues.
 
-# ```
+---
 
-# 
+## 📄 License
 
-# Install them with:
+This project is licensed under the **MIT License**.
 
-# 
+---
 
-# ```bash
+## 📬 Contact
 
-# pip install -r requirements.txt
+| Platform | Username / Email | Link |
+|----------|------------------|------|
+| 📧 Email | `batuhanisiklar0@gmail.com` | [Send Email](mailto:batuhanisiklar0@gmail.com) |
+| 💼 LinkedIn | `Batuhan Işıklar` | [LinkedIn Profile](https://www.linkedin.com/in/batuhanisiklar/) |
 
-# ```
+---
 
-# 
-
-# ---
-
-# 
-
-# \## 🚀 Usage
-
-# 
-
-# 1\. \*\*Clone the repository\*\*:
-
-# 
-
-# ```bash
-
-# git clone https://github.com/batuhanisiklar/mlp-classifier-gui.git
-
-# cd mlp-classifier-gui
-
-# ```
-
-# 
-
-# 2\. \*\*Create virtual environment (optional but recommended)\*\*:
-
-# 
-
-# ```bash
-
-# python -m venv .venv
-
-# .venv\\Scripts\\activate  # Windows
-
-# source .venv/bin/activate # macOS/Linux
-
-# ```
-
-# 
-
-# 3\. \*\*Run the application\*\*:
-
-# 
-
-# ```bash
-
-# python main.py
-
-# ```
-
-# 
-
-# ---
-
-# 
-
-# \## 🖼️ GUI Overview
-
-# 
-
-# The interface contains buttons to trigger each evaluation method. After computation:
-
-# \- The \*\*accuracy\*\* is shown in a popup,
-
-# \- A \*\*confusion matrix\*\* is plotted, saved as image, and displayed in the GUI.
-
-# 
-
-# You can also close the app safely using the \*\*Quit\*\* button.
-
-# 
-
-# ---
-
-# 
-
-# \## 📦 Project Structure
-
-# 
-
-# ```
-
-# mlp-classifier-gui/
-
-# ├── main.py               # Main application script
-
-# ├── requirements.txt      # Project dependencies
-
-# └── README.md             # Project documentation
-
-# ```
-
-# 
-
-# ---
-
-# 
-
-# \## 🤝 Contributing
-
-# 
-
-# Feel free to fork this project and submit pull requests. Bug reports, suggestions, and contributions are welcome!
-
-# 
-
-# ---
-
-# 
-
-# \## 📄 License
-
-# 
-
-# This project is licensed under the \*\*MIT License\*\*.
-
-# 
-
-# ---
-
-# 
-
-# \## 📬 Contact
-
-# 
-
-# | Platform | Info |
-
-# |----------|------|
-
-# | 📧 Email | batuhanisiklar0@gmail.com |
-
-# | 💼 LinkedIn | \[linkedin.com/in/batuhanisiklar](https://www.linkedin.com/in/batuhanisiklar/) |
-
-# 
-
-# ---
-
-# 
-
-# > Built with 💻 and ❤️ by Batuhan Işıklar
-
+> Made with ❤️ by Batuhan Işıklar

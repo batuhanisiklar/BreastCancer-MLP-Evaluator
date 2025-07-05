@@ -1,0 +1,5 @@
+tk
+pillow
+ucimlrepo
+scikit-learn
+matplotlib
